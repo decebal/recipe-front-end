@@ -24,6 +24,6 @@ const mapStateToProps = state => ({
   recipes: state.recipes,
 });
 
-const mapDispatchToProps = () => {};
+const mapDispatchToProps = () => ({});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
