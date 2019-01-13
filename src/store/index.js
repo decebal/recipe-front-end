@@ -1,22 +1,31 @@
 /* eslint-disable no-underscore-dangle */
-import { createStore, applyMiddleware } from 'redux';
+import { createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import ReduxThunk from 'redux-thunk';
+import { persistStore, persistReducer } from 'redux-persist';
+import storage from 'redux-persist/lib/storage';
 import rootReducer from '../reducers';
 
+
+const persistConfig = {
+  key: 'root',
+  storage,
+};
+
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
 export default function reduxStore() {
-  const composedEnhancers = composeWithDevTools(
-    applyMiddleware(ReduxThunk),
-  );
+  const composedEnhancers = composeWithDevTools();
 
   const store = createStore(
-    rootReducer,
+    persistedReducer,
     composedEnhancers,
   );
+
+  const persistor = persistStore(store);
 
   if (process.env.NODE_ENV !== 'production' && module.hot) {
     module.hot.accept('../reducers', () => store.replaceReducer(rootReducer));
   }
 
-  return store;
+  return { store, persistor };
 }

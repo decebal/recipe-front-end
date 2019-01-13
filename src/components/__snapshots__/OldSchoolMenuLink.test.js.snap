@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OldSchoolMenuLink renders correctly 1`] = `
+<div
+  className="active"
+>
+  &gt; 
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    Home
+  </a>
+</div>
+`;

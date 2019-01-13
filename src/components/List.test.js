@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Home from './Home';
+import List from './List';
 
 
-test('Home renders correctly', () => {
+test('List renders correctly', () => {
   const tree = renderer
-    .create(<Home />)
+    .create(<List />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar renders correctly 1`] = `
+<div>
+  <div
+    className="active"
+  >
+    &gt; 
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      Home
+    </a>
+  </div>
+</div>
+`;

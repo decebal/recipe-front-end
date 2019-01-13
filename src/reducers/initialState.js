@@ -1,7 +1,9 @@
 export default {
-  recipes: [
-    {
-      id: 1,
+  loading: false,
+  error: null,
+  recipes: {
+    'eaa9152a-d7d4-4e3a-bc41-fd694c9d0f21': {
+      id: 'eaa9152a-d7d4-4e3a-bc41-fd694c9d0f21',
       name: 'Keto Breakfast Tacos With Bacon and Guacamole',
       description: `Nutritional Information (Per Serving):
 Calories: 387 Protein: 11g Carbs: 9g Net Carbs: 4g Sugar: 0g Sugar Alcohol:0g
@@ -32,8 +34,8 @@ Vitamin C: 11% Calcium: 2% Iron: 9%`,
         + 'Oil plus Himalayan pink salt.',
       ],
     },
-    {
-      id: 2,
+    '1151e44d-7528-4551-b6e0-1af35ba3c5eb': {
+      id: '1151e44d-7528-4551-b6e0-1af35ba3c5eb',
       name: 'Bulletproof Coffee Egg Latte',
       description: 'Nutritional Information (Per Serving):\n'
       + 'Calories: 331 Protein: 24g Carbs: 1g\n'
@@ -64,5 +66,5 @@ Vitamin C: 11% Calcium: 2% Iron: 9%`,
         'Top with cinnamon.',
       ],
     },
-  ],
+  },
 };

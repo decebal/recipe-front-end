@@ -2,17 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import Store from './store';
 
-const store = Store();
+const { store, persistor } = Store();
 const mountPoint = document.getElementById('root');
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <PersistGate loading={null} persistor={persistor}>
+      <App />
+    </PersistGate>
   </Provider>,
   mountPoint,
 );

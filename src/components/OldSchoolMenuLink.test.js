@@ -1,10 +1,13 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { MemoryRouter } from 'react-router-dom';
 import OldSchoolMenuLink from './OldSchoolMenuLink';
 
 test('OldSchoolMenuLink renders correctly', () => {
   const tree = renderer
-    .create(<OldSchoolMenuLink label="Home" to="/" />)
+    .create(<MemoryRouter initialEntries={['/']}>
+      <OldSchoolMenuLink label="Home" to="/" />
+    </MemoryRouter>)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

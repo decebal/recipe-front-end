@@ -3,10 +3,10 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 import Home from './Home';
 
-const MainContainer = () => (
+const Main = () => (
   <div>
     <Route exact path="/" component={Home} />
   </div>
 );
 
-export default MainContainer;
+export default Main;

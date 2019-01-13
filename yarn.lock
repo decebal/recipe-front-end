@@ -2702,6 +2702,14 @@ create-react-context@^0.2.2:
     fbjs "^0.8.0"
     gud "^1.0.0"
 
+cross-env@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-5.2.0.tgz#6ecd4c015d5773e614039ee529076669b9d126f2"
+  integrity sha512-jtdNFfFW1hB7sMhr/H6rW1Z45LFqyI431m3qU6bFXcQ3Eh7LtBuG3h74o7ohHZ3crrRkkqHlo4jYHFPcjroANg==
+  dependencies:
+    cross-spawn "^6.0.5"
+    is-windows "^1.0.0"
+
 cross-spawn@6.0.5, cross-spawn@^6.0.0, cross-spawn@^6.0.5:
   version "6.0.5"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-6.0.5.tgz#4a5ec7c64dfae22c3a14124dbacdee846d80cbc4"
@@ -5563,7 +5571,7 @@ is-utf8@^0.2.0:
   resolved "https://registry.yarnpkg.com/is-utf8/-/is-utf8-0.2.1.tgz#4b0da1442104d1b336340e80797e865cf39f7d72"
   integrity sha1-Sw2hRCEE0bM2NA6AeX6GXPOffXI=
 
-is-windows@^1.0.1, is-windows@^1.0.2:
+is-windows@^1.0.0, is-windows@^1.0.1, is-windows@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/is-windows/-/is-windows-1.0.2.tgz#d1850eb9791ecd18e6182ce12a30f396634bb19d"
   integrity sha512-eXK1UInq2bPmjyX6e3VHIzMLobc4J94i4AWn+Hpq3OU5KkrRC96OAcR3PRJ/pGu6m8TRnBHP9dkXQVsT/COVIA==
@@ -9001,13 +9009,6 @@ react@^16.7.0:
     prop-types "^15.6.2"
     scheduler "^0.12.0"
 
-reactackle-alert-area@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/reactackle-alert-area/-/reactackle-alert-area-1.1.0.tgz#de0cb122e58866cdc878c829cf6b9dd1a78fa1e2"
-  integrity sha512-bgzUP48SkTqdgCeuw3eIfVYPZG+49oxJTE9UtVVbSzBmBSE2Xxoc6otjsBRz97SaL9Oine/Zbuuzqd44xjAOZA==
-  dependencies:
-    prop-types "^15.5.10"
-
 reactackle-button@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/reactackle-button/-/reactackle-button-1.1.0.tgz#a8a693d023a50273cb2f0a01e99071bfe463e5e2"
@@ -9016,6 +9017,13 @@ reactackle-button@^1.1.0:
     color "^2.0.0"
     prop-types "^15.5.10"
     reactackle-icons "^1.1.0"
+
+reactackle-card@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/reactackle-card/-/reactackle-card-1.1.0.tgz#70917e4d87612e082c982056f98a6e17d705a75e"
+  integrity sha512-vRUnR+YOGBtjwp3UDjWEdW8eVV9prqwm54Aqxdra6mU6H4/0mpnXUVdiSUaEz5IrOIrchBC18lvOlol/EkeUlQ==
+  dependencies:
+    prop-types "^15.5.10"
 
 reactackle-core@^1.1.0:
   version "1.1.0"
@@ -10747,6 +10755,11 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
+
+uuid4@^1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/uuid4/-/uuid4-1.1.4.tgz#80fa0618749110bdb8aa47cc2cc2167c6331f4eb"
+  integrity sha512-Gr1q2k40LpF8CokcnQFjPDsdslzJbTCTBG5xQIEflUov431gFkY5KduiGIeKYAamkQnNn4IfdHJbLnl9Bib8TQ==
 
 uuid@^3.0.1, uuid@^3.3.2:
   version "3.3.2"

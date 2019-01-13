@@ -2,11 +2,12 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Headline, Container, Paragraph } from './layout';
+import { Headline, Paragraph } from './layout';
+import type RecipeType from '../types/recipe';
 
 const Recipe = ({
   name, description, ingredients, instructions,
-}) => (
+}: RecipeType) => (
   <div>
     <Headline>{name}</Headline>
     <Paragraph>{description}</Paragraph>

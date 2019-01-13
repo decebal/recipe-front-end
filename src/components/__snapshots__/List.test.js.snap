@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`List renders correctly 1`] = `
+<div>
+  <h1
+    className="sc-bxivhb hPRIrZ"
+  >
+    Recipes
+  </h1>
+  <div
+    className="sc-EHOje hJuYqK"
+  >
+    <div
+      className="sc-bZQynM kzxiXY"
+    >
+      <div
+        className="CardStyled-eliUpK jMAAOR"
+        elevation={1}
+      >
+        <div
+          className="CardAreaMainStyled-iFCMnc cfsANX"
+        >
+          <div
+            className="CardActionsStyled-kvcgrO jTKgwa"
+            size="default"
+          >
+            <div
+              className="CardActionsMainStyled-ktQsKf bEsixs"
+              size="default"
+            >
+              <a
+                className="ButtonStyled__Button-kPwumP labhZc"
+                disabled={false}
+                href="/recipe/new"
+                onClick={[Function]}
+                radius="default"
+                size="normal"
+                title=""
+              >
+                <div
+                  className="ButtonTextStyled-kqmWUR foLdiD"
+                  size="normal"
+                >
+                  <div
+                    className="ButtonTitleStyled-EwESb hkRlbG"
+                    size="normal"
+                  >
+                    Create a new recipe
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
