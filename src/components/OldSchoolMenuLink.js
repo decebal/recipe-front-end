@@ -12,7 +12,6 @@ const OldSchoolMenuLink = ({ label, to, activeOnlyWhenExact }
     exact={activeOnlyWhenExact}
     children={({ match }) => (
       <div className={match ? 'active' : ''}>
-        {match ? '> ' : ''}
         <Link to={to}>{label}</Link>
       </div>
     )}

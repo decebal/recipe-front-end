@@ -13,8 +13,8 @@ const Main = () => (
     <Switch>
       <Route exact path="/" component={Home} />
       <Route path="/recipe/new" component={NewRecipe} />
-      <Route path="/recipe/:uuid" component={RecipePage} />
       <Route path="/recipe/:uuid/edit" component={EditRecipe} />
+      <Route path="/recipe/:uuid" component={RecipePage} />
       <Route component={GenericNotFound} />
     </Switch>
   </Container>

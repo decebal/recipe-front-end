@@ -4,7 +4,6 @@ exports[`OldSchoolMenuLink renders correctly 1`] = `
 <div
   className="active"
 >
-  &gt; 
   <a
     href="/"
     onClick={[Function]}

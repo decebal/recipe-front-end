@@ -2,7 +2,7 @@
 import React from 'react';
 import Navbar from '@bootstrap-styled/v4/lib/Navbar';
 import {
-  Container, Nav, NavItem, NavLink,
+  Container, Nav, NavItem,
 } from '@bootstrap-styled/v4/dist/@bootstrap-styled/v4';
 import OldSchoolMenuLink from './OldSchoolMenuLink';
 
@@ -11,7 +11,7 @@ const Sidebar = () => (
     <Container>
       <Nav navbar className="mr-auto">
         <NavItem>
-          <NavLink><OldSchoolMenuLink activeOnlyWhenExact to="/" label="Home" /></NavLink>
+          <OldSchoolMenuLink activeOnlyWhenExact to="/" label="Home" />
         </NavItem>
       </Nav>
     </Container>
