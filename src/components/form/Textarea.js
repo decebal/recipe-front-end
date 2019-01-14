@@ -41,11 +41,10 @@ const Textarea = ({
       <StyledTextarea
         id={id}
         type={type}
+        value={value}
         onChange={onChange}
         {...props}
-      >
-        {value}
-      </StyledTextarea>
+      />
       <InputFeedback error={error} />
     </PaddedInputGroup>
   );
@@ -56,7 +55,7 @@ Textarea.propTypes = {
   className: PropTypes.string,
   type: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
+  value: PropTypes.string,
   id: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
 };
@@ -64,6 +63,7 @@ Textarea.propTypes = {
 Textarea.defaultProps = {
   error: null,
   className: null,
+  value: null,
 };
 
 

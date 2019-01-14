@@ -24,6 +24,11 @@ exports[`Recipe renders correctly 1`] = `
     >
       <p
         className="lead P-sc-31hrrf-0 ivKXeO"
+        style={
+          Object {
+            "textAlign": "left",
+          }
+        }
       >
         
       </p>

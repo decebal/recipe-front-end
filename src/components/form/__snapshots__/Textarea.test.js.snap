@@ -5,7 +5,7 @@ exports[`Textarea renders correctly 1`] = `
   className="sc-bxivhb gCIOfD"
 >
   <label
-    className="sc-bdVaJa bNfbPK"
+    className="sc-bdVaJa iXjSzF"
     htmlFor="invalid-uuid-4"
   >
     textarea
@@ -15,8 +15,7 @@ exports[`Textarea renders correctly 1`] = `
     id="invalid-uuid-4"
     onChange={[Function]}
     type="text"
-  >
-    Text
-  </textarea>
+    value="Text"
+  />
 </div>
 `;

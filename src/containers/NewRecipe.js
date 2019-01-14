@@ -6,6 +6,7 @@ import { push } from 'connected-react-router';
 import RecipeForm from '../components/RecipeForm';
 import { add } from '../actions/list';
 import { Headline } from '../components/layout';
+import type Recipe from '../types/recipe';
 
 const NewRecipe = props => (
   <div>
@@ -15,20 +16,19 @@ const NewRecipe = props => (
 );
 
 NewRecipe.propTypes = {
-  handleSubmit: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired,
 };
 
-NewRecipe.defaultProps = {
-
-};
+NewRecipe.defaultProps = {};
 
 const mapStateToProps = () => ({});
 
-
 const mapDispatchToProps = dispatch => ({
-  handleSubmit: (recipe) => {
+  onSubmit: (recipe: Recipe) => {
     dispatch(add(recipe));
-    dispatch(push(`/recipe/${recipe.id}`));
+    dispatch(push('/'));
+    // ideally this should redirect to the new recipe
+    // dispatch(push(`/recipe/${recipe.id}`));
   },
 });
 

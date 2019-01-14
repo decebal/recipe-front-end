@@ -12,12 +12,17 @@ import {
   P,
   Row,
 } from '@bootstrap-styled/v4/dist/@bootstrap-styled/v4';
+import * as uuid4 from 'uuid4';
 import { Headline } from './layout';
 import type RecipeType from '../types/recipe';
 
 
-const listItems = ({ items }) => Object.values(items).map(item => (
-  <ListGroupItem>{item}</ListGroupItem>
+const listItems = ({ items }) => Object.values(items).map((item, key) => (
+  <ListGroupItem key={uuid4()} style={{ textAlign: 'left' }}>
+    {key + 1}
+    {' . '}
+    {item}
+  </ListGroupItem>
 ));
 
 const Recipe = ({
@@ -30,7 +35,7 @@ const Recipe = ({
     </Row>
     <Jumbotron fluid>
       <Container>
-        <P className="lead">{description}</P>
+        <P className="lead" style={{ textAlign: 'left' }}>{description}</P>
       </Container>
     </Jumbotron>
     <Hr />

@@ -6,6 +6,7 @@ const StyledLabel = styled.label`
   font-weight: bold;
   display: block;
   margin-bottom: .5rem;  
+  text-align: left;
 `;
 
 const Label = ({

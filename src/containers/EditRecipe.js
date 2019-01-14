@@ -9,15 +9,15 @@ import RecipeForm from '../components/RecipeForm';
 import { edit } from '../actions/list';
 
 const EditRecipe = ({
-  id, name, description, ingredients, instructions, handleSubmit,
+  id, name, description, ingredients, instructions, onSubmit,
 }) => (
   <div>
     <Headline>Edit your Recipe</Headline>
     <RecipeForm
-      values={{
-        name, description, ingredients, instructions,
+      recipe={{
+        id, name, description, ingredients, instructions,
       }}
-      handleSubmit={() => handleSubmit({ id })}
+      onSubmit={() => onSubmit({ id })}
     />
   </div>
 );
@@ -33,7 +33,7 @@ EditRecipe.propTypes = {
   description: PropTypes.string,
   ingredients: PropTypes.arrayOf(PropTypes.string),
   instructions: PropTypes.arrayOf(PropTypes.string),
-  handleSubmit: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired,
 };
 
 EditRecipe.defaultProps = {
@@ -54,7 +54,7 @@ const mapStateToProps = (state, props) => ({
 
 
 const mapDispatchToProps = dispatch => ({
-  handleSubmit: (recipe) => {
+  onSubmit: (recipe) => {
     dispatch(edit(recipe));
     dispatch(push(`/recipe/${recipe.id}`));
   },

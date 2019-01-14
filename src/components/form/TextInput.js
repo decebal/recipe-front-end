@@ -55,7 +55,7 @@ TextInput.propTypes = {
   className: PropTypes.string,
   type: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
+  value: PropTypes.string,
   id: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
 };
@@ -63,6 +63,7 @@ TextInput.propTypes = {
 TextInput.defaultProps = {
   error: null,
   className: null,
+  value: '',
 };
 
 

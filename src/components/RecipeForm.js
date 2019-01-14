@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withFormik } from 'formik';
-import styled from 'styled-components';
 import * as Yup from 'yup';
+import {
+  Button, ButtonGroup, H2, Hr, Row,
+} from '@bootstrap-styled/v4/dist/@bootstrap-styled/v4';
+import { lensPath, range, view } from 'ramda';
 import TextInput from './form/TextInput';
 import Textarea from './form/Textarea';
 
@@ -27,44 +30,15 @@ const formikEnhancer = withFormik({
   mapPropsToValues: ({ recipe }) => ({
     ...recipe,
   }),
-  handleSubmit: (payload, { setSubmitting }) => {
-    // alert(payload.email);
+
+  handleSubmit: (payload, { setSubmitting, props }) => {
+    const { onSubmit } = props;
+    setSubmitting(true);
+    onSubmit(payload);
     setSubmitting(false);
   },
   displayName: 'RecipeEditor',
 });
-
-const StyledButton = styled.button`
-  max-width: 150px;
-  margin: 20px 0;
-  padding: 12px 20px;
-  border-style: none;
-  border-radius: 5px;
-  background-color: #08c;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
-  font-size: 17px;
-  font-weight: 500;
-  color: #fff;
-  cursor: pointer;
-  outline: none;
-  -webkit-appearance: none;
-
-  &:disabled {
-    opacity: .5;
-    cursor: not-allowed !important;
-  }
-
-  &.outline {
-    background-color: #eee;
-    border: 1px solid #aaa;
-    color: #555;
-  }
-  
-  button + button {
-    margin-left: .5rem;
-  }
-`;
-
 
 const RecipeForm = ({
   values,
@@ -98,46 +72,100 @@ const RecipeForm = ({
       onChange={handleChange}
       onBlur={handleBlur}
     />
-    <TextInput
-      id="lastName"
-      type="text"
-      label="Last Name"
-      placeholder="Doe"
-      error={touched.lastName && errors.lastName}
-      value={values.lastName}
-      onChange={handleChange}
-      onBlur={handleBlur}
-    />
-    <StyledButton
-      type="button"
-      className="outline"
-      onClick={handleReset}
-      disabled={!dirty || isSubmitting}
-    >
-        Reset
-    </StyledButton>
-    <StyledButton type="submit" disabled={isSubmitting}>
-        Submit
-    </StyledButton>
+    <Hr />
+    <Row>
+      <H2>Ingredients</H2>
+    </Row>
+    {range(0, 9).map(key => (
+      <TextInput
+        key={`input-${key}`}
+        id={`ingredients[${key}]`}
+        type="text"
+        placeholder="Ingredient"
+        label={`Ingredient no. ${key + 1}`}
+        error={view(lensPath(['ingredients', key]), touched) && view(lensPath(['ingredients', key]), errors)}
+        value={view(lensPath(['ingredients', key]), values)}
+        onChange={handleChange}
+        onBlur={handleBlur}
+      />
+    ))}
+    <Hr />
+    <Row>
+      <H2>Instructions</H2>
+    </Row>
+    {range(0, 9).map(key => (
+      <TextInput
+        key={`input-${key}`}
+        id={`instructions[${key}]`}
+        type="text"
+        placeholder="Instruction"
+        label={`Step no. ${key + 1}`}
+        error={view(lensPath(['instructions', key]), touched) && view(lensPath(['instructions', key]), errors)}
+        value={view(lensPath(['instructions', key]), values)}
+        onChange={handleChange}
+        onBlur={handleBlur}
+      />
+    ))}
+    <Hr />
+    <Row style={{ flexFlow: 'row-reverse' }}>
+      <ButtonGroup>
+        <Button color="secondary" onClick={handleReset} disabled={!dirty || isSubmitting}>Reset</Button>
+        <Button color="primary" disabled={isSubmitting} type="submit">Submit</Button>
+      </ButtonGroup>
+    </Row>
+    <Hr />
   </form>
 );
 
 
 RecipeForm.propTypes = {
   values: PropTypes.shape({
-
-  }).isRequired,
-  touched: PropTypes.string.isRequired,
-  errors: PropTypes.string.isRequired,
-  dirty: PropTypes.string.isRequired,
+    name: PropTypes.string,
+    description: PropTypes.string,
+    ingredients: PropTypes.arrayOf(PropTypes.string),
+    instructions: PropTypes.arrayOf(PropTypes.string),
+  }),
+  touched: PropTypes.shape({
+    name: PropTypes.bool,
+    description: PropTypes.bool,
+    ingredients: PropTypes.arrayOf(PropTypes.bool),
+    instructions: PropTypes.arrayOf(PropTypes.bool),
+  }),
+  errors: PropTypes.shape({
+    name: PropTypes.string,
+    description: PropTypes.string,
+    ingredients: PropTypes.arrayOf(PropTypes.string),
+    instructions: PropTypes.arrayOf(PropTypes.string),
+  }),
+  dirty: PropTypes.bool,
+  isSubmitting: PropTypes.bool,
   handleChange: PropTypes.func.isRequired,
   handleBlur: PropTypes.func.isRequired,
   handleSubmit: PropTypes.func.isRequired,
   handleReset: PropTypes.func.isRequired,
-  isSubmitting: PropTypes.bool.isRequired,
 };
 
 RecipeForm.defaultProps = {
+  values: {
+    name: '',
+    description: '',
+    ingredients: [],
+    instructions: [],
+  },
+  touched: {
+    name: false,
+    description: false,
+    ingredients: [],
+    instructions: [],
+  },
+  errors: {
+    name: null,
+    description: null,
+    ingredients: [],
+    instructions: [],
+  },
+  dirty: false,
+  isSubmitting: false,
 };
 
 

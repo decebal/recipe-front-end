@@ -5,7 +5,7 @@ exports[`TextInput renders correctly 1`] = `
   className="sc-bxivhb gCIOfD"
 >
   <label
-    className="sc-bdVaJa bNfbPK"
+    className="sc-bdVaJa iXjSzF"
     htmlFor="invalid-uuid-4"
   >
     textarea
