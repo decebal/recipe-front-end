@@ -6,7 +6,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import Store from './store';
+import Store, { history } from './store';
 
 const { store, persistor } = Store();
 const mountPoint = document.getElementById('root');
@@ -14,7 +14,7 @@ const mountPoint = document.getElementById('root');
 ReactDOM.render(
   <Provider store={store}>
     <PersistGate loading={null} persistor={persistor}>
-      <App />
+      <App history={history} />
     </PersistGate>
   </Provider>,
   mountPoint,

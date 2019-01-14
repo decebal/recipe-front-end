@@ -4,14 +4,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import {
-  Card,
-  CardActions, CardActionsMain,
-  CardAreaMain,
-  CardHeaderSecondary,
-} from 'reactackle-card';
-import { Button } from 'reactackle-button';
+  Button, Card, CardBlock, CardDeck, CardTitle,
+} from '@bootstrap-styled/v4/dist/@bootstrap-styled/v4';
 import type Recipe from '../types/recipe';
-import { Headline, Container } from './layout';
+import { Headline } from './layout';
 import type Recipes from '../types/recipes';
 
 const PaddedCard = styled.div`
@@ -20,22 +16,11 @@ const PaddedCard = styled.div`
 
 const recipesList = ({ recipes }) => Object.values(recipes).map((item: Recipe) => (
   <PaddedCard key={`recipe-${item.id}`}>
-    <Card>
-      <CardAreaMain>
-        <CardHeaderSecondary
-          title={item.name}
-        />
-
-        <CardActions>
-          <CardActionsMain>
-            <Button
-              raised
-              text="See more"
-              href={`/recipe/${item.id}`}
-            />
-          </CardActionsMain>
-        </CardActions>
-      </CardAreaMain>
+    <Card width="15rem">
+      <CardBlock>
+        <CardTitle>{item.name}</CardTitle>
+        <Button color="primary" href={`/recipe/${item.id}`}>See more</Button>
+      </CardBlock>
     </Card>
   </PaddedCard>
 ));
@@ -45,25 +30,18 @@ const List = ({
 }: { recipes: Recipes}) => (
   <div>
     <Headline>Recipes</Headline>
-    <Container>
+    <CardDeck>
       { recipesList({ recipes }) }
       <PaddedCard>
-        <Card>
-          <CardAreaMain>
-            <CardActions>
-              <CardActionsMain>
-                <Button
-                  raised
-                  colorScheme="success"
-                  text="Create a new recipe"
-                  href="/recipe/new"
-                />
-              </CardActionsMain>
-            </CardActions>
-          </CardAreaMain>
+        <Card width="15rem">
+          <CardBlock>
+            <Button color="success" href="/recipe/new">
+              Create a new recipe
+            </Button>
+          </CardBlock>
         </Card>
       </PaddedCard>
-    </Container>
+    </CardDeck>
   </div>
 );
 

@@ -3,16 +3,101 @@
 exports[`Recipe renders correctly 1`] = `
 <div>
   <h1
-    className="sc-bxivhb hPRIrZ"
+    className="sc-bdVaJa qBDhK"
   >
     
   </h1>
-  <p
-    className="sc-ifAKCX mgcNx"
+  <div
+    className="Row-sc-2hg243-0 gRqPSy row"
   >
-    
-  </p>
-  <p />
-  <p />
+    <h2
+      className="H2-kplljn-0 bPmkUD"
+    >
+      Description
+    </h2>
+  </div>
+  <div
+    className="Jumbotron-sc-4btr39-0 chpogd jumbotron jumbotron-fluid"
+  >
+    <div
+      className="Container-u38a83-0 jDuhNh container"
+    >
+      <p
+        className="lead P-sc-31hrrf-0 ivKXeO"
+      >
+        
+      </p>
+    </div>
+  </div>
+  <hr
+    className="Hr-sc-1a12p8r-0 jPQocB"
+  />
+  <div
+    className="Row-sc-2hg243-0 gRqPSy row"
+  >
+    <h2
+      className="H2-kplljn-0 bPmkUD"
+    >
+      Ingredients
+    </h2>
+  </div>
+  <ul
+    className="ListGroup-sc-1ugap33-0 ewIJD list-group Ul-sctud2-0 ldzbsT"
+    role="navigation"
+    tag="nav"
+    toggleable="false"
+  />
+  <hr
+    className="Hr-sc-1a12p8r-0 jPQocB"
+  />
+  <div
+    className="Row-sc-2hg243-0 gRqPSy row"
+  >
+    <h2
+      className="H2-kplljn-0 bPmkUD"
+    >
+      Instructions
+    </h2>
+  </div>
+  <ul
+    className="ListGroup-sc-1ugap33-0 ewIJD list-group Ul-sctud2-0 ldzbsT"
+    role="navigation"
+    tag="nav"
+    toggleable="false"
+  />
+  <hr
+    className="Hr-sc-1a12p8r-0 jPQocB"
+  />
+  <div
+    className="Row-sc-2hg243-0 gRqPSy row"
+    style={
+      Object {
+        "flexFlow": "row-reverse",
+      }
+    }
+  >
+    <div
+      className="ButtonGroup-sc-1wk454k-0 euUImV btn-group"
+      role="group"
+    >
+      <a
+        className="Button-h8watj-0 OlpfH btn btn-outline-warning"
+        href="/recipe/invalid-uuid-4/edit"
+        onClick={[Function]}
+      >
+        Edit Recipe
+      </a>
+      <button
+        className="Button-h8watj-0 OlpfH btn btn-outline-danger"
+        onClick={[Function]}
+        type="button"
+      >
+        Delete Recipe
+      </button>
+    </div>
+  </div>
+  <hr
+    className="Hr-sc-1a12p8r-0 jPQocB"
+  />
 </div>
 `;

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Textarea renders correctly 1`] = `
+<div
+  className="sc-bxivhb gCIOfD"
+>
+  <label
+    className="sc-bdVaJa bNfbPK"
+    htmlFor="invalid-uuid-4"
+  >
+    textarea
+  </label>
+  <textarea
+    className="sc-htpNat bPsheZ"
+    id="invalid-uuid-4"
+    onChange={[Function]}
+    type="text"
+  >
+    Text
+  </textarea>
+</div>
+`;

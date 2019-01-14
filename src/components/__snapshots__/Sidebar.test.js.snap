@@ -1,17 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Sidebar renders correctly 1`] = `
-<div>
+<nav
+  className="Navbar-sc-1o0l5dr-0 LHdqb navbar navbar-toggleable-lg navbar-light bg-faded"
+  role="navigation"
+>
   <div
-    className="active"
+    className="Container-u38a83-0 jDuhNh container"
   >
-    &gt; 
-    <a
-      href="/"
-      onClick={[Function]}
+    <ul
+      className="mr-auto Nav-ggw7qv-0 bQFVaC navbar-nav Ul-sctud2-0 ldzbsT"
+      role="navigation"
+      tag="nav"
+      toggleable="false"
     >
-      Home
-    </a>
+      <li
+        className="nav-item"
+      >
+        <a
+          className="nav-link A-sc-70cat-0 gsCFrI"
+          onClick={[Function]}
+        >
+          <div
+            className="active"
+          >
+            &gt; 
+            <a
+              href="/"
+              onClick={[Function]}
+            >
+              Home
+            </a>
+          </div>
+        </a>
+      </li>
+    </ul>
   </div>
-</div>
+</nav>
 `;

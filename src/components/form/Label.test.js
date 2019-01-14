@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import GreenButton from './GreenButton';
+import Label from './Label';
 
 
-test('GreenButton renders correctly', () => {
+test('Label renders correctly', () => {
   const tree = renderer
-    .create(<GreenButton />)
+    .create(<Label>Label</Label>)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

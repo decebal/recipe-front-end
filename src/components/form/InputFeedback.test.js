@@ -1,11 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import BlueButton from './BlueButton';
+import InputFeedback from './InputFeedback';
 
 
-test('BlueButton renders correctly', () => {
+test('InputFeedback renders correctly', () => {
   const tree = renderer
-    .create(<BlueButton />)
+    .create(<InputFeedback />)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

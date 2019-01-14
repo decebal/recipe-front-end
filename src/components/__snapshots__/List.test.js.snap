@@ -3,54 +3,29 @@
 exports[`List renders correctly 1`] = `
 <div>
   <h1
-    className="sc-bxivhb hPRIrZ"
+    className="sc-bdVaJa qBDhK"
   >
     Recipes
   </h1>
   <div
-    className="sc-EHOje hJuYqK"
+    className="CardDeck-hiovo2-0 fKfSga card-deck"
   >
     <div
-      className="sc-bZQynM kzxiXY"
+      className="sc-bxivhb gJleJc"
     >
       <div
-        className="CardStyled-eliUpK jMAAOR"
-        elevation={1}
+        className="Card-sc-18qyd5o-0 fVoFvn card"
       >
         <div
-          className="CardAreaMainStyled-iFCMnc cfsANX"
+          className="card-block"
         >
-          <div
-            className="CardActionsStyled-kvcgrO jTKgwa"
-            size="default"
+          <a
+            className="Button-h8watj-0 OlpfH btn btn-success"
+            href="/recipe/new"
+            onClick={[Function]}
           >
-            <div
-              className="CardActionsMainStyled-ktQsKf bEsixs"
-              size="default"
-            >
-              <a
-                className="ButtonStyled__Button-kPwumP labhZc"
-                disabled={false}
-                href="/recipe/new"
-                onClick={[Function]}
-                radius="default"
-                size="normal"
-                title=""
-              >
-                <div
-                  className="ButtonTextStyled-kqmWUR foLdiD"
-                  size="normal"
-                >
-                  <div
-                    className="ButtonTitleStyled-EwESb hkRlbG"
-                    size="normal"
-                  >
-                    Create a new recipe
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
+            Create a new recipe
+          </a>
         </div>
       </div>
     </div>
