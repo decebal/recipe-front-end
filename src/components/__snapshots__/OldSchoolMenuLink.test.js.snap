@@ -12,3 +12,16 @@ exports[`OldSchoolMenuLink renders correctly 1`] = `
   </a>
 </div>
 `;
+
+exports[`OldSchoolMenuLink renders correctly 2`] = `
+<div
+  className=""
+>
+  <a
+    href="/recipe"
+    onClick={[Function]}
+  >
+    Home
+  </a>
+</div>
+`;

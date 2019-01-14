@@ -19,6 +19,54 @@ exports[`List renders correctly 1`] = `
         <div
           className="card-block"
         >
+          <h4
+            className="card-title H4-sc-1gsd57f-0 bvxPCS"
+          >
+            Keto Breakfast Tacos With Bacon and Guacamole
+          </h4>
+          <a
+            className="Button-h8watj-0 OlpfH btn btn-primary"
+            href="/recipe/eaa9152a-d7d4-4e3a-bc41-fd694c9d0f21"
+            onClick={[Function]}
+          >
+            See more
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-bxivhb gJleJc"
+    >
+      <div
+        className="Card-sc-18qyd5o-0 fVoFvn card"
+      >
+        <div
+          className="card-block"
+        >
+          <h4
+            className="card-title H4-sc-1gsd57f-0 bvxPCS"
+          >
+            Bulletproof Coffee Egg Latte
+          </h4>
+          <a
+            className="Button-h8watj-0 OlpfH btn btn-primary"
+            href="/recipe/1151e44d-7528-4551-b6e0-1af35ba3c5eb"
+            onClick={[Function]}
+          >
+            See more
+          </a>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-bxivhb gJleJc"
+    >
+      <div
+        className="Card-sc-18qyd5o-0 fVoFvn card"
+      >
+        <div
+          className="card-block"
+        >
           <a
             className="Button-h8watj-0 OlpfH btn btn-success"
             href="/recipe/new"

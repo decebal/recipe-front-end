@@ -110,7 +110,7 @@ const RecipeForm = ({
     <Row style={{ flexFlow: 'row-reverse' }}>
       <ButtonGroup>
         <Button color="secondary" onClick={handleReset} disabled={!dirty || isSubmitting}>Reset</Button>
-        <Button color="primary" disabled={isSubmitting} type="submit">Submit</Button>
+        <Button color="primary" disabled={isSubmitting} type="submit" id="submit">Submit</Button>
       </ButtonGroup>
     </Row>
     <Hr />

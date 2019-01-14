@@ -11,3 +11,12 @@ test('OldSchoolMenuLink renders correctly', () => {
     .toJSON();
   expect(tree).toMatchSnapshot();
 });
+
+test('OldSchoolMenuLink renders correctly', () => {
+  const tree = renderer
+    .create(<MemoryRouter initialEntries={['/']}>
+      <OldSchoolMenuLink label="Home" to="/recipe" />
+    </MemoryRouter>)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});

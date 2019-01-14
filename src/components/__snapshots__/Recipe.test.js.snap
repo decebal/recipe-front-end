@@ -5,7 +5,7 @@ exports[`Recipe renders correctly 1`] = `
   <h1
     className="sc-bdVaJa qBDhK"
   >
-    
+    name
   </h1>
   <div
     className="Row-sc-2hg243-0 gRqPSy row"
@@ -30,7 +30,7 @@ exports[`Recipe renders correctly 1`] = `
           }
         }
       >
-        
+        description
       </p>
     </div>
   </div>
@@ -51,7 +51,20 @@ exports[`Recipe renders correctly 1`] = `
     role="navigation"
     tag="nav"
     toggleable="false"
-  />
+  >
+    <li
+      className="list-group-item"
+      style={
+        Object {
+          "textAlign": "left",
+        }
+      }
+    >
+      1
+       . 
+      Ingredient
+    </li>
+  </ul>
   <hr
     className="Hr-sc-1a12p8r-0 jPQocB"
   />
@@ -69,7 +82,20 @@ exports[`Recipe renders correctly 1`] = `
     role="navigation"
     tag="nav"
     toggleable="false"
-  />
+  >
+    <li
+      className="list-group-item"
+      style={
+        Object {
+          "textAlign": "left",
+        }
+      }
+    >
+      1
+       . 
+      Step 1
+    </li>
+  </ul>
   <hr
     className="Hr-sc-1a12p8r-0 jPQocB"
   />

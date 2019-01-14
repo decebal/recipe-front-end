@@ -42,7 +42,7 @@
     "lint:css": "stylelint './src/**/*.js'",
     "offline": "sls offline start",
     "test": "react-scripts test",
-    "test:coverage": "yarn test -- --coverage",
+    "test:coverage": "yarn test --coverage",
     "test:staged": "cross-env CI=true react-scripts test --env=jsdom --findRelatedTests"
   },
   "eslintConfig": {
@@ -85,7 +85,10 @@
       "!src/helpers/*.js",
       "!src/store/*.js",
       "!src/theme/*.js",
-      "!src/types/*.js"
+      "!src/types/*.js",
+      "!src/index.js",
+      "!src/setupTests.js",
+      "!src/serviceWorker.js"
     ],
     "coverageThreshold": {
       "global": {

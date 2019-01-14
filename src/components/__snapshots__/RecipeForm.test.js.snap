@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Recipe renders correctly 1`] = `
+exports[`<RecipeForm /> RecipeForm renders correctly 1`] = `
 <form
   onSubmit={[Function]}
 >
@@ -432,6 +432,7 @@ exports[`Recipe renders correctly 1`] = `
       </button>
       <button
         className="Button-h8watj-0 OlpfH btn btn-primary"
+        id="submit"
         onClick={[Function]}
         type="submit"
       >

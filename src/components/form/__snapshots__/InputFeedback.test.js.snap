@@ -1,3 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`InputFeedback renders correctly 1`] = `null`;
+
+exports[`InputFeedback renders correctly with error 1`] = `
+<label
+  className="sc-bdVaJa bUZliV"
+>
+  Required field
+</label>
+`;

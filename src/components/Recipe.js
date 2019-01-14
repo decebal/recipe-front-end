@@ -12,7 +12,7 @@ import {
   P,
   Row,
 } from '@bootstrap-styled/v4/dist/@bootstrap-styled/v4';
-import * as uuid4 from 'uuid4';
+import uuid4 from 'uuid4';
 import { Headline } from './layout';
 import type RecipeType from '../types/recipe';
 
