@@ -934,10 +934,10 @@
   resolved "https://registry.yarnpkg.com/@bootstrap-styled/utils/-/utils-1.8.1.tgz#f1686af5860c4330017442912239342d7181de25"
   integrity sha512-XQd8sasrPNCV3tYH0eQB0X3FsgCe1FaI1vCJPyfXs/9s91w+Cj2SHjxTkllleDnP53ywr+uMAqDmsDyEqjbFuw==
 
-"@bootstrap-styled/v4@2.0.16":
-  version "2.0.16"
-  resolved "https://registry.yarnpkg.com/@bootstrap-styled/v4/-/v4-2.0.16.tgz#29db1f80ce951bbf7e70e991a2225f373a184a91"
-  integrity sha512-JPBIvDHLVcLGFGm9Xu/OLwLAloHOTv2L1Sw9beN3Kwm8HujWE751NtF0j+9LeGLJ5RzXaMVsnL13iYFvwxt65Q==
+"@bootstrap-styled/v4@2.0.22":
+  version "2.0.22"
+  resolved "https://registry.yarnpkg.com/@bootstrap-styled/v4/-/v4-2.0.22.tgz#2fd250e1093e21a392818c6f537586a1f9e3b752"
+  integrity sha512-CoWUPqEJ/DwCGmsdsvX1V1GdzlhfaUXotpzzKUP+HU07x4FYW3VFiO0LKk7YTK3Zdy+Pc3Q0Jf4eL7MxlaJD2A==
   dependencies:
     "@bootstrap-styled/color" "^1.0.9"
     "@bootstrap-styled/css-mixins" "^2.0.5"
@@ -951,7 +951,7 @@
     map-to-css-modules "^1.0.6"
     prop-types "^15.6.2"
     react-portal "^4.2.0"
-    react-transition-group "^2.5.2"
+    react-transition-group "^2.5.3"
     tether-fix "^1.4.0-fix-es"
 
 "@csstools/convert-colors@^1.4.0":
@@ -3466,7 +3466,7 @@ dom-converter@~0.2:
   dependencies:
     utila "~0.4"
 
-dom-helpers@^3.3.1:
+dom-helpers@^3.3.1, dom-helpers@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/dom-helpers/-/dom-helpers-3.4.0.tgz#e9b369700f959f62ecde5a6babde4bccd9169af8"
   integrity sha512-LnuPJ+dwqKDIyotW1VzmOZ5TONUN7CwkCR5hrgawTUbkBGYdeoNLZo6nNfGkCrjtE1nXXaj7iMMpDa8/d9WoIA==
@@ -9537,12 +9537,22 @@ react-test-renderer@16.7.0, react-test-renderer@^16.0.0-0:
     react-is "^16.7.0"
     scheduler "^0.12.0"
 
-react-transition-group@^2.5.1, react-transition-group@^2.5.2:
+react-transition-group@^2.5.1:
   version "2.5.2"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.5.2.tgz#9457166a9ba6ce697a3e1b076b3c049b9fb2c408"
   integrity sha512-vwHP++S+f6KL7rg8V1mfs62+MBKtbMeZDR8KiNmD7v98Gs3UPGsDZDahPJH2PVprFW5YHJfh6cbNim3zPndaSQ==
   dependencies:
     dom-helpers "^3.3.1"
+    loose-envify "^1.4.0"
+    prop-types "^15.6.2"
+    react-lifecycles-compat "^3.0.4"
+
+react-transition-group@^2.5.3:
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-2.9.0.tgz#df9cdb025796211151a436c69a8f3b97b5b07c8d"
+  integrity sha512-+HzNTCHpeQyl4MJ/bdE0u6XRMe9+XG/+aL4mCxVN4DnPBQ0/5bfHWPDuOZUzYdMj94daZaZdCCc1Dzt9R/xSSg==
+  dependencies:
+    dom-helpers "^3.4.0"
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
