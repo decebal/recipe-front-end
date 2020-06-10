@@ -13,7 +13,7 @@
     "enzyme-to-json": "3.3.5",
     "flow-bin": "0.89.0",
     "formik": "1.4.2",
-    "history": "4.7.2",
+    "history": "4.10.1",
     "jest": "23.6.0",
     "jest-enzyme": "7.0.1",
     "prop-types": "15.6.2",
